@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlowRaiders", "SlowRaiders\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastVillagers", "FastVillagers\FastVillagers.csproj", "{70FAE88F-B3D4-47CC-BA00-DCBE7A385495}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForcedChildLabor", "ForcedChildLabor\ForcedChildLabor.csproj", "{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,14 @@ Global
 		{70FAE88F-B3D4-47CC-BA00-DCBE7A385495}.Release|Any CPU.Build.0 = Release|Any CPU
 		{70FAE88F-B3D4-47CC-BA00-DCBE7A385495}.Release|x64.ActiveCfg = Release|Any CPU
 		{70FAE88F-B3D4-47CC-BA00-DCBE7A385495}.Release|x64.Build.0 = Release|Any CPU
+		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Debug|x64.ActiveCfg = Debug|x64
+		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Debug|x64.Build.0 = Debug|x64
+		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Release|x64.ActiveCfg = Release|Any CPU
+		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
