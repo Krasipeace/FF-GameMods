@@ -30,7 +30,7 @@ namespace RichVillagers
                 {
                     if (codes[i].opcode == OpCodes.Stfld && codes[i].operand as FieldInfo == fieldInfo)
                     {
-                        codes.Insert(i, new CodeInstruction(OpCodes.Ldc_I4, 40));
+                        codes.Insert(i, new CodeInstruction(OpCodes.Ldc_I4, 30));
                         codes.Insert(i + 1, new CodeInstruction(OpCodes.Mul));
                         i += 2;
                     }
