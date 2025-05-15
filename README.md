@@ -1,6 +1,6 @@
-# FF-HackTools
-Collection of cheating mods
+# FF- Game Mods
 
+Collection of mods
 
 ## Rich Villagers
 
