@@ -6,7 +6,7 @@ using System.Reflection.Emit;
 using System.Reflection;
 using System.Linq;
 
-[assembly: MelonInfo(typeof(RichVillagers.RichVillager), "Rich Villagers", "1.0.0", "Krasipeace")]
+[assembly: MelonInfo(typeof(RichVillagers.RichVillager), "Rich Villagers", "1.0.1", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
 namespace RichVillagers
 {
@@ -30,7 +30,7 @@ namespace RichVillagers
                 {
                     if (codes[i].opcode == OpCodes.Stfld && codes[i].operand as FieldInfo == fieldInfo)
                     {
-                        codes.Insert(i, new CodeInstruction(OpCodes.Ldc_I4, 30));
+                        codes.Insert(i, new CodeInstruction(OpCodes.Ldc_I4, 10));
                         codes.Insert(i + 1, new CodeInstruction(OpCodes.Mul));
                         i += 2;
                     }
