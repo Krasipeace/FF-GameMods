@@ -13,7 +13,6 @@ namespace SlowRaiders
             LoggerInstance.Msg("Raiders are slow");
         }
 
-        #region RaiderModifications
         [HarmonyPatch(typeof(BatteringRam), "Awake")]
         public class PatchBatteringRam
         {
@@ -45,6 +44,5 @@ namespace SlowRaiders
                 Traverse.Create(__instance).Field("_movementSpeedBaseRun").SetValue(2f);
             }
         }
-        #endregion
     }
 }

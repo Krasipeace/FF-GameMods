@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Reflection.Emit;
 using System.Reflection;
 using System.Linq;
+using System.Data;
 
 [assembly: MelonInfo(typeof(RichVillagers.RichVillager), "Rich Villagers", "1.0.1", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
@@ -14,13 +15,12 @@ namespace RichVillagers
     {
         public override void OnInitializeMelon()
         {
-            LoggerInstance.Msg("Villagers will spend more gold at market");
+            LoggerInstance.Msg("Villagers are 10 times reacher than normal");
         }
 
         [HarmonyPatch(typeof(MarketBuilding), "GenerateMonthlyTaxes")]
         public class PatchMarketIncome
         {
-
             protected static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
             {
                 var codes = new List<CodeInstruction>(instructions);
