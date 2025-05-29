@@ -1,16 +1,16 @@
 ﻿using MelonLoader;
 using HarmonyLib;
 
-[assembly: MelonInfo(typeof(ForcedChildLabor.ChildLabor), "Forced Child Labor", "1.0.0", "Krasipeace")]
+[assembly: MelonInfo(typeof(ForcedChildLabor.ChildLabor), "Forced Child Labor", "1.0.1", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
 namespace ForcedChildLabor
 {
-
     public class ChildLabor : MelonMod
     {
         public override void OnInitializeMelon()
         {
-            LoggerInstance.Msg("Forced children labor activated");
+            ChildLaborConfig.Load();
+            LoggerInstance.Msg("Forced children labor activated - config file @<YourGameFolder>/UserData/MelonPreferences.cfg -> [ChildLaborConfig]");
         }
 
         [HarmonyPatch(typeof(VillagerHealth), "Awake")]
@@ -18,8 +18,8 @@ namespace ForcedChildLabor
         {
             protected static void Postfix(VillagerHealth __instance)
             {
-                Traverse.Create(__instance).Field("ageCutoffChild").SetValue(7);
-                Traverse.Create(__instance).Field("ageCutoffAdolescent").SetValue(15);
+                Traverse.Create(__instance).Field("ageCutoffChild").SetValue(ChildLaborConfig.AgeCutoffChild.Value);
+                Traverse.Create(__instance).Field("ageCutoffAdolescent").SetValue(ChildLaborConfig.AgeCutoffAdolescent.Value);
             }
         }
 
@@ -28,8 +28,8 @@ namespace ForcedChildLabor
         {
             protected static void Postfix(School __instance)
             {
-                Traverse.Create(__instance).Field("minEnrollmentAge").SetValue(5);
-                Traverse.Create(__instance).Field("maxEnrollmentAge").SetValue(50);
+                Traverse.Create(__instance).Field("minEnrollmentAge").SetValue(ChildLaborConfig.SchoolMinAge.Value);
+                Traverse.Create(__instance).Field("maxEnrollmentAge").SetValue(ChildLaborConfig.SchoolMaxAge.Value);
             }
         }
     }
