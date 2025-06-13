@@ -20,7 +20,7 @@ namespace RichVillagers
         public override void OnInitializeMelon()
         {
             richVillagerConfig = MelonPreferences.CreateCategory("RichVillagerConfig", "Rich Villager Config");
-            goldMultiplier = richVillagerConfig.CreateEntry<int>("GoldMultiplier", 10, "Gold Multiplier", "Multiplier for market gold income");
+            goldMultiplier = richVillagerConfig.CreateEntry<int>("GoldMultiplier", 10, "Gold Multiplier", "Multiplier for market gold income, use number between 1 and 99. Using different number might cause game crash or save damage.");
             MelonPreferences.Save();
 
             LoggerInstance.Msg($"Gold Income Market Multiplier: x{GoldMultiplier}. Check \\..\\..\\UserData\\MelonPreferences\\[RichVillagerConfig] for a change.");
