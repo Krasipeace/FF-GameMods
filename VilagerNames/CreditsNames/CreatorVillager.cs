@@ -4,7 +4,7 @@ using MelonLoader;
 
 using System.Collections.Generic;
 
-[assembly: MelonInfo(typeof(CreditsNames.CreatorVillager), "Credits Names", "1.0.0", "Krasipeace")]
+[assembly: MelonInfo(typeof(CreditsNames.CreatorVillager), "Credits Names", "1.0.3", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
 namespace CreditsNames
 {
@@ -68,11 +68,6 @@ namespace CreditsNames
             "Programming Team", "Art Band", "Design Knights", "Production Monsters", "Sound Terrors", "Playtesters", "Local Raiders"
         };
         #endregion
-        public override void OnInitializeMelon()
-        {
-            LoggerInstance.Msg("Game Credits Names initiated...");
-        }
-
         [HarmonyPatch(typeof(VillagerNameManager), "GetRandomName")]
         public class PatchGetRandomName
         {

@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastVillagers", "FastVillag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForcedChildLabor", "ForcedChildLabor\ForcedChildLabor.csproj", "{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeEvents", "ChallengeEvents\ChallengeEvents.csproj", "{743C0E2F-96F7-442B-9F38-6B92CB66E76F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,14 +51,6 @@ Global
 		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Release|x64.ActiveCfg = Release|Any CPU
 		{2526F3AD-F52C-4CB7-94F1-1C56D5BB8B42}.Release|x64.Build.0 = Release|Any CPU
-		{743C0E2F-96F7-442B-9F38-6B92CB66E76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{743C0E2F-96F7-442B-9F38-6B92CB66E76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{743C0E2F-96F7-442B-9F38-6B92CB66E76F}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{743C0E2F-96F7-442B-9F38-6B92CB66E76F}.Debug|x64.Build.0 = Debug|Any CPU
-		{743C0E2F-96F7-442B-9F38-6B92CB66E76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{743C0E2F-96F7-442B-9F38-6B92CB66E76F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{743C0E2F-96F7-442B-9F38-6B92CB66E76F}.Release|x64.ActiveCfg = Release|Any CPU
-		{743C0E2F-96F7-442B-9F38-6B92CB66E76F}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

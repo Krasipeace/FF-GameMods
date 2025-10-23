@@ -2,17 +2,12 @@
 
 using MelonLoader;
 
-[assembly: MelonInfo(typeof(SlowRaiders.SlowRaider), "Slow Raiders", "1.0.0", "Krasipeace")]
+[assembly: MelonInfo(typeof(SlowRaiders.SlowRaider), "Slow Raiders", "1.0.3", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
 namespace SlowRaiders
 {
     public class SlowRaider : MelonMod
     {
-        public override void OnInitializeMelon()
-        {
-            LoggerInstance.Msg("Raiders are slow");
-        }
-
         [HarmonyPatch(typeof(BatteringRam), "Awake")]
         public class PatchBatteringRam
         {

@@ -4,7 +4,7 @@ using MelonLoader;
 
 using System.Collections.Generic;
 
-[assembly: MelonInfo(typeof(VikingNames.VikingNames), "Viking Names", "1.0.2", "Krasipeace")]
+[assembly: MelonInfo(typeof(VikingNames.VikingNames), "Viking Names", "1.0.3", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
 
 namespace VikingNames
@@ -136,10 +136,6 @@ namespace VikingNames
             "The Vinland Voyagers"
         };
         #endregion
-        public override void OnInitializeMelon()
-        {
-            LoggerInstance.Msg("Viking Names initiated...");
-        }
         # region Prefixes
         [HarmonyPatch(typeof(VillagerNameManager), "GetRandomName")]
         public class Patch_VillagerNameManager_GetRandomName

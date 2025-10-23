@@ -2,17 +2,12 @@
 
 using MelonLoader;
 
-[assembly: MelonInfo(typeof(FastVillagers.FastVillager), "Fast Villagers", "1.0.0", "Krasipeace")]
+[assembly: MelonInfo(typeof(FastVillagers.FastVillager), "Fast Villagers", "1.0.3", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
 namespace FastVillagers
 {
     public class FastVillager : MelonMod
     {
-        public override void OnInitializeMelon()
-        {
-            LoggerInstance.Msg("Villagers move faster, Wagons are faster");
-        }
-
         [HarmonyPatch(typeof(Character), "Awake")]
         public class PatchCharacterStats
         {

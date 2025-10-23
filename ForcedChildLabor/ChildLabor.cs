@@ -1,7 +1,7 @@
 ﻿using MelonLoader;
 using HarmonyLib;
 
-[assembly: MelonInfo(typeof(ForcedChildLabor.ChildLabor), "Forced Child Labor", "1.0.1", "Krasipeace")]
+[assembly: MelonInfo(typeof(ForcedChildLabor.ChildLabor), "Forced Child Labor", "1.0.3", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
 namespace ForcedChildLabor
 {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 using System.Collections.Generic;
 
-[assembly: MelonInfo(typeof(AngloSaxonNames.AngloSaxonNames), "AngloSaxon Names", "1.0.0", "Krasipeace")]
+[assembly: MelonInfo(typeof(AngloSaxonNames.AngloSaxonNames), "AngloSaxon Names", "1.0.3", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
 namespace AngloSaxonNames
 {
@@ -44,11 +44,6 @@ namespace AngloSaxonNames
             "Alfred's Guards", "Aethelstan's Host", "Offa's Warband", "Edward's Company", "Edgar's Men", "Aethelberht's Kin"
         };
         #endregion
-        public override void OnInitializeMelon()
-        {
-            LoggerInstance.Msg("Anglo-Saxon Names initiated...");
-        }
-
         [HarmonyPatch(typeof(VillagerNameManager), "GetRandomName")]
         public class PatchVillagerNameManager
         {

@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Linq;
 using System.Data;
 
-[assembly: MelonInfo(typeof(RichVillagers.RichVillager), "Rich Villagers", "1.0.2", "Krasipeace")]
+[assembly: MelonInfo(typeof(RichVillagers.RichVillager), "Rich Villagers", "1.0.3", "Krasipeace")]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
 namespace RichVillagers
 {
