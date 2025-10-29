@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-
 using MelonLoader;
 
 [assembly: MelonInfo(typeof(SlowRaiders.SlowRaider), "Slow Raiders", "1.0.3", "Krasipeace")]
