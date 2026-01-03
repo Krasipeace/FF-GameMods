@@ -74,4 +74,13 @@ You can find the mod at Steam Workshop at [link](https://steamcommunity.com/shar
 
 You can find the mod at Steam Workshop at [link](https://steamcommunity.com/sharedfiles/filedetails/?id=3478468778)
 
+### Bear Names
+![bearNamesPic](/ffbearNames.png)
+
+- Changes the names of the bears to the names of popular TV/Movie/Cartoon Shows/Fairytales/Video Games.
+- Works on already started games on 1.0.0+ [Mono] for newly immigrated or birthed bears. 
+- Works on newly created games on 1.0.0+ [Mono]. It doesn't rename old names. 
+- It might have conflict with other villager renaming mods!
+- Works perfect with Farthest Frontbear mode.
+
 <hr>
