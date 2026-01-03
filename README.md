@@ -83,4 +83,6 @@ You can find the mod at Steam Workshop at [link](https://steamcommunity.com/shar
 - It might have conflict with other villager renaming mods!
 - Works perfect with Farthest Frontbear mode.
 
+You can find the mod at Steam Workshop at [link](https://steamcommunity.com/sharedfiles/filedetails/?id=3638626777)
+
 <hr>
